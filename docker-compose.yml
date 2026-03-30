@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api-estudos:
+    build: .
+    container_name: gestao-estudos-container
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./dados:/app/dados
+    restart: always

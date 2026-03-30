@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1774867573765,
+    "titulo": "Tarefa de Teste Atualizada",
+    "status": "pendente",
+    "descricao": "Aprendi a usar o método PUT com sucesso!"
+  },
+  {
+    "id": 1774868099795,
+    "titulo": "Estudar Git",
+    "status": "pendente"
+  },
+  {
+    "id": 1774868221621,
+    "titulo": "Estudar Git",
+    "status": "pendente"
+  },
+  {
+    "id": 1774872681716,
+    "titulo": "Estudar Linux e CLI",
+    "descricao": "Aprender comandos básicos do Linux, Praticar navegação no terminal, Gerenciar permissões de arquivos",
+    "status": "pendente"
+  },
+  {
+    "id": 1774872846024,
+    "titulo": "Estudar API HTTP & REST",
+    "descricao": "Estudar métodos HTTP, Criar primeira API REST, Testar endpoints com Thunder Client, Implementar boas práticas REST",
+    "status": "pendente"
+  },
+  {
+    "id": 1774873006512,
+    "titulo": "Estudar Segurança Essentials",
+    "descricao": "Estudar CIA, Autenticação vs Autorização, OWASP API Security Top 10",
+    "status": "pendente"
+  },
+  {
+    "id": 1774873105174,
+    "titulo": "Docker",
+    "descricao": "Criar 1º Dockerfile, Rodar aplicação em container, entender a diferença entre imagem e container, trabalhar com volumes no docker",
+    "status": "pendente"
+  },
+  {
+    "id": 1774873237178,
+    "titulo": "Isso é para Apagar ",
+    "descricao": "Como serás deletado, não há necessidade de caprichar muito na descrição.",
+    "status": "vou apagar"
+  }
+]
