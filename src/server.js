@@ -20,7 +20,7 @@ app.post('/tarefas', (req, res) => {
 
     const tarefas = db.ler();
     
-    // 2. Incluímos a descrição aqui para ela ser gravada
+    // 2. Incluí a descrição aqui para ela ser gravada
     const novaTarefa = { 
         id: Date.now(), 
         titulo, 
@@ -36,12 +36,12 @@ app.post('/tarefas', (req, res) => {
 });
 // Rota DELETE: Remover uma tarefa específica pelo ID
 app.delete('/tarefas/:id', (req, res) => {
-    // 1. Pegamos o ID da URL. O ":" no código indica que é um parâmetro variável
+    // 1. Peguei o ID da URL. O ":" no código indica que é um parâmetro variável
     const idParaApagar = Number(req.params.id);
     
     const tarefas = db.ler();
     
-    // 2. Criamos uma nova lista filtrando (tirando) quem tem o ID que queremos apagar
+    // 2. Criei uma nova lista a filtrar (tirando) quem tem o ID que quero apagar
     const tarefasFiltradas = tarefas.filter(t => t.id !== idParaApagar);
     
     // Se o tamanho da lista não mudou, significa que o ID não existia
@@ -49,7 +49,7 @@ app.delete('/tarefas/:id', (req, res) => {
         return res.status(404).json({ erro: "Tarefa não encontrada" });
     }
 
-    // 3. Gravamos a lista atualizada (sem a tarefa apagada) no arquivo
+    // 3. Gravei a lista atualizada (sem a tarefa apagada) no arquivo
     db.gravar(tarefasFiltradas);
 
     console.log(JSON.stringify({ 
@@ -69,7 +69,7 @@ app.put('/tarefas/:id', (req, res) => {
 
     if (index === -1) return res.status(404).json({ erro: "Tarefa não encontrada" });
 
-    // Substituímos os dados mantendo o ID original
+    // Substituí os dados mantendo o ID original
     tarefas[index] = { ...tarefas[index], titulo, descricao };
     db.gravar(tarefas);
 
@@ -86,19 +86,19 @@ app.patch('/tarefas/:id/status', (req, res) => {
 
     if (index === -1) return res.status(404).json({ erro: "Tarefa não encontrada" });
 
-    // Alteramos apenas o campo status
+    // Alterar apenas o campo status
     tarefas[index].status = status;
     db.gravar(tarefas);
 
     res.status(200).json(tarefas[index]);
 });
 
-// Buscamos as variáveis que defini no .env
+// Buscar as variáveis que defini no .env
 const PORTA = process.env.PORT || 3000; 
 const NOME = process.env.APP_NOME || "API";
 
 app.listen(PORTA, () => {
-    // Usamos Crase (``) para conseguir colocar as variáveis dentro do texto
+    // Usei Crase (``) para conseguir colocar as variáveis dentro do texto
     console.log(`-----------------------------------------`);
     console.log(`${NOME} ONLINE NA PORTA ${PORTA}`);
     console.log(`-----------------------------------------`);
