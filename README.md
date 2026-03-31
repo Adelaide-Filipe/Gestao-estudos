@@ -19,5 +19,5 @@ O projeto cumpre os seguintes requisitos técnicos:
 
 ### 1. Clonar o Repositório
 ```bash
-git clone <link-do-seu-repositorio>
+git clone https://github.com/Adelaide-Filipe/Gestao-estudos.git
 cd GESTAO-ESTUDOS
