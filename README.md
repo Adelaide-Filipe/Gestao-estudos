@@ -9,6 +9,7 @@ O projeto cumpre os seguintes requisitos técnicos:
 3. **Logs Estruturados:** Monitorização via console em formato JSON (`JSON.stringify`).
 4. **Orquestração:** Configuração completa via Docker Compose.
 5. **Persistência:** Uso de volumes Docker para persistir dados num ficheiro JSON local.
+6. **Versionamento:** Repositório Git com commits seguindo o padrão Conventional Commits e histórico estruturado de desenvolvimento.
 
 ## 🛠️ Tecnologias
 - **Node.js** & **Express**
